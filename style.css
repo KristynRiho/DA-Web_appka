@@ -1,0 +1,162 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+	BARVY
+	sede pozadi      #e5e5e5
+	svetle fialova   #48418e
+	tmave fialova    #25133d
+
+	POUZITE PISMO
+	Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+	https://fonts.google.com/specimen/Roboto
+	Písmo už je v HTML nalinkované a v CSS nastavené pro body.
+*/
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #e5e5e5;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.obal {
+  /* obsah stránky je omezený do pruhu širokého 960px */
+  width: 960px;
+
+  /* pruh je na stránce vycentrovaný */
+  margin: 0 auto;
+
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+
+:root {
+  --gray-background: #e5e5e5;
+  --purple-soft: #48418e;
+  --purple-dark: #25133d;
+}
+
+/**** MENU */
+.menu {
+  display: flex;
+  padding-left: 30px;
+}
+
+.app-name {
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu li a:hover {
+  background-color: var(--purple-dark);
+  color: white;
+}
+
+/**** BANNER  */
+.banner {
+  color: white;
+  min-height: 450px;
+  padding-left: 40px;
+  background-image: url(images/pozadi.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner__title {
+  font-size: 90px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.banner__slogan {
+  font-size: 36px;
+  margin: 30px 0 50px 0;
+}
+
+.banner__mobil {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* buttons */
+.banner__btns {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 20px 45px;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.btn--download {
+  background-color: var(--purple-soft);
+}
+
+.btn--download:hover {
+  background-color: transparent;
+}
+
+.btn--info:hover {
+  background-color: var(--purple-soft);
+}
+
+/**** CONTENT  */
+.content {
+  display: flex;
+  text-align: center;
+  margin: 35px 16px;
+}
+
+.content__imgs {
+  width: 80px;
+}
+
+.content__item {
+  padding: 0 20px;
+}
+
+.content__item h2 {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--purple-soft);
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/**** FOOTER  */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: var(--purple-soft);
+  color: white;
+  font-size: 14px;
+}
