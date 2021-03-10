@@ -52,14 +52,20 @@ body {
 }
 
 /**** MENU */
-.menu {
+.header-container {
   display: flex;
-  padding-left: 30px;
 }
 
 .app-name {
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  display: flex;
+  padding-left: 30px;
 }
 
 .menu li {
@@ -83,6 +89,7 @@ body {
   color: white;
   min-height: 450px;
   padding-left: 40px;
+  padding-right: 410px;
   background-image: url(images/pozadi.jpg);
   background-size: cover;
   background-position: center;
