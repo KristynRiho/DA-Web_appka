@@ -68,18 +68,18 @@ body {
   padding-left: 30px;
 }
 
-.menu li {
+.menu__item {
   list-style-type: none;
 }
 
-.menu li a {
+.menu__item a {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
   color: black;
 }
 
-.menu li a:hover {
+.menu__item a:hover {
   background-color: var(--purple-dark);
   color: white;
 }
@@ -143,15 +143,15 @@ body {
   margin: 35px 16px;
 }
 
-.content__imgs {
+.content-item__imgs {
   width: 80px;
 }
 
-.content__item {
+.content-item {
   padding: 0 20px;
 }
 
-.content__item h2 {
+.content-item__heading {
   font-weight: 700;
   font-size: 20px;
   color: var(--purple-soft);
